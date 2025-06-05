@@ -1,0 +1,16 @@
+class Main{
+    static int sumofNaturalNumbers(int n){
+        if(n==1){
+            return 1;
+        }else{
+            return n+sumofNaturalNumbers(n-1);
+        }
+    }
+    public static void main(String[] args){
+        int number=10;
+        int result=sumofNaturalNumbers(number);
+        System.out.println("sum of first"+number+" natural numbers is"+result);
+    }
+}
+
+        
