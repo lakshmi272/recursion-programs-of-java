@@ -1,0 +1,27 @@
+ew ListNode(v);
+            curr = curr.next;
+        }
+        return dummy.next;
+    }
+import java.util.*;
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+}
+
+class TreeNode {
+    int val;
+    TreeNode left, right;
+    TreeNode(int x) { val = x; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int[] input = {-10, -3, 0, 5, 9};
+        ListNode head = createLinkedList(input);
+        TreeNode root = sortedListToBST(head);
+        List<String> output = levelOrder(root);
+        System.out.println(output);
+    }
